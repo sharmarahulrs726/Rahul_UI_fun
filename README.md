@@ -80,12 +80,18 @@ Or connect your GitHub repo to Vercel manually:
 
 This repo includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that auto-deploys to GitHub Pages on every push to `main`.
 
-**To enable:**
-1. Go to repo **Settings → Pages**
-2. Under **Source**, select **GitHub Actions**
-3. Push to `main` — the workflow will build and deploy automatically
+**Important:** You must enable Pages in your repo settings **before** running the workflow, or you'll get a `"Not Found"` error.
 
-Or deploy manually:
+**Setup steps:**
+1. Push the repo to `https://github.com/sharmarahulrs726/Rahul_UI_fun`
+2. Go to repo **Settings → Pages** (in GitHub UI)
+3. Under **Source**, select **GitHub Actions** (not "Deploy from a branch")
+4. Go to the **Actions** tab — the workflow will run automatically
+5. After it completes, your site is live at `https://sharmarahulrs726.github.io/Rahul_UI_fun/`
+
+> ⚠️ If you see `"HttpError: Not Found"`, it means Pages is not enabled yet. Complete step 2-3 above, then re-run the workflow from the Actions tab.
+
+Or deploy manually (requires enabling Pages first):
 ```bash
 npm run deploy:gh-pages
 ```

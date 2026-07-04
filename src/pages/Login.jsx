@@ -164,7 +164,7 @@ export default function Login() {
         transition={{ delay: 1 }}
       >
         <p className="text-xs text-[var(--text-secondary)] opacity-50">
-          Made with 💖 by Funky Devs
+          Made with 💖 by RS Jald using open code
         </p>
       </motion.div>
 

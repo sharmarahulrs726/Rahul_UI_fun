@@ -22,6 +22,26 @@ import WeatherUI from "./pages/WeatherUI";
 import SocialFeed from "./pages/SocialFeed";
 import FunFormLab from "./pages/FunFormLab";
 import GrandFinale from "./pages/GrandFinale";
+import BounceHouse from "./pages/BounceHouse";
+import MemoryMatch from "./pages/MemoryMatch";
+import TypingRace from "./pages/TypingRace";
+import EmojiDecoder from "./pages/EmojiDecoder";
+import SpinWheel from "./pages/SpinWheel";
+import TreasureHunt from "./pages/TreasureHunt";
+import PaintSplatter from "./pages/PaintSplatter";
+import MusicBox from "./pages/MusicBox";
+import DiscoFloor from "./pages/DiscoFloor";
+import MagicShow from "./pages/MagicShow";
+import HauntedHouse from "./pages/HauntedHouse";
+import CasinoRoyale from "./pages/CasinoRoyale";
+import TimeCapsule from "./pages/TimeCapsule";
+import ArtGallery from "./pages/ArtGallery";
+import PlanetExplorer from "./pages/PlanetExplorer";
+import CookingChaos from "./pages/CookingChaos";
+import SportsArena from "./pages/SportsArena";
+import PuzzlePalace from "./pages/PuzzlePalace";
+import PhotoBooth from "./pages/PhotoBooth";
+import MazeRunner from "./pages/MazeRunner";
 
 export default function App() {
   return (
@@ -50,6 +70,26 @@ export default function App() {
               <Route path="/social" element={<SocialFeed />} />
               <Route path="/forms" element={<FunFormLab />} />
               <Route path="/finale" element={<GrandFinale />} />
+              <Route path="/bounce" element={<BounceHouse />} />
+              <Route path="/memory" element={<MemoryMatch />} />
+              <Route path="/typing" element={<TypingRace />} />
+              <Route path="/decoder" element={<EmojiDecoder />} />
+              <Route path="/spinwheel" element={<SpinWheel />} />
+              <Route path="/treasure" element={<TreasureHunt />} />
+              <Route path="/paint" element={<PaintSplatter />} />
+              <Route path="/musicbox" element={<MusicBox />} />
+              <Route path="/disco" element={<DiscoFloor />} />
+              <Route path="/magic" element={<MagicShow />} />
+              <Route path="/haunted" element={<HauntedHouse />} />
+              <Route path="/casino" element={<CasinoRoyale />} />
+              <Route path="/timecapsule" element={<TimeCapsule />} />
+              <Route path="/artgallery" element={<ArtGallery />} />
+              <Route path="/planets" element={<PlanetExplorer />} />
+              <Route path="/cooking" element={<CookingChaos />} />
+              <Route path="/sports" element={<SportsArena />} />
+              <Route path="/puzzle" element={<PuzzlePalace />} />
+              <Route path="/photobooth" element={<PhotoBooth />} />
+              <Route path="/maze" element={<MazeRunner />} />
             </Route>
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
